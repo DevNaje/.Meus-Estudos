@@ -6,3 +6,29 @@ body {
     margin: 0;                  /* remove margens padrão */
     background-color: #ffffff;  /* fundo branco */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cabecalho {
+padding-right: 0px;
+}
+
+nav.menu {
+    margin: auto 20px;
+    text-align: right;
+}
+
+header > a > img {
+    width: 200px;
+}
+
+header {
+    display: flex;
+    background-color: black;
+}
+
+nav > a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: auto 20px auto auto;
+    text-align: right;
+}
