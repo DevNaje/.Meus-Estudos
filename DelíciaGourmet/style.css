@@ -6,167 +6,84 @@ body {
     margin: 0;                  /* remove margens padrão */
     background-color: #ffffff;  /* fundo branco */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Cabeçalho (logo + menu) */
-.cabeçalho {
-    display: flex;                         /* coloca logo e menu lado a lado */
-    justify-content: space-between;       /* espaço entre os elementos */
-    align-items: center;                  /* alinha verticalmente */
-    padding: 20px 10px;                  /* espaço interno (vertical 20px, horizontal 100px) */
-    background-color: #000;               /* fundo preto */
-}
-
-/* Logo da esquerda */
-.logopretaDG {
-    display: inline-block;
-    width: 150px;                           /* define o tamanho da logo */
-    padding: auto;  
-    text-align: left; 
-    margin: auto;                     
-}
-
-/* Menu do cabeçalho */
-.menu {
-    display: flex;                        /* alinha os links em linha */
-    gap: 40px;                            /* espaço entre os links */
-    margin-left: 40px;
-    margin-right: 150px;
-}
-
-/* Estilo dos links */
-.menu a {
-    color: white;                         /* texto branco */
-    text-decoration: none;                /* remove o sublinhado */
-    font-weight: bold;                    /* texto em negrito */
-    font-size: auto;                      /* tamanho da fonte */
-    transition: color 0.3s;               /* animação de transição suave na cor */
-}
-
-.cardapiomenu {
-width: auto;
-padding: auto;
-}
-
-
-/* O conteúdo principal da página cresce para empurrar o rodapé */
-main {
-    flex: 1;                              /* faz o conteúdo ocupar o espaço restante da tela */
-    align-items: center;
     text-align: center;
-    margin: 20px;
 }
 
-/* Rodapé do site */
-footer {
-    background-color: #000;               /* fundo preto */
-    color: white;                         /* texto branco */
-    text-align: center;                   /* centraliza o texto */
-    padding: 20px;                        /* espaço interno */
-}
-
-/*
-main hr {
-    border: none;
-    height: 2px;
-    background-color: red;
-    width: 60rem;
-    margin: 10px auto;
-
-}
-*/
-/* Alinhamento dos elementos principais */
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: red;
-    width: auto;
-    margin: 10px auto;
-}
-
-.contato-item {
-    margin-bottom: 30px; /* Espaço entre cada seção */
-}
-
-.contato-item h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px; /* Espaço entre título e conteúdo */
-}
-
-.contatos img {
-    width: 30px; /* Define o tamanho dos ícones */
-}
-
-.contatos .email, .whats, .redes-sociais {
-    display: flex;
-    flex-direction: column; /* Organiza os ícones e texto na vertical */
-    align-items: center;
-    gap: 10px;
-}
-
-.contatos .email span, .whats span, .redes-sociais p {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-top: 5px; 
-}
-
-.email a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: black;  
+main {
     margin: auto;
 }
 
-.whats a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: black;
-    margin: auto;
+img {
+    width: 20px;
 }
 
-.redes-sociais a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: black;
-    margin: auto;
-}
-
-.redes-sociais img, .whats img .email img{
-    width: 30px;
-}
-
-.contato-item1 {
-    display: block;
-    margin: left;
-    width: 300px;
-}
-
-.contato-item2 {
-    display: block;
-    margin-top: 13px;
-    width: 300px;
-    margin: auto;
-    align-items: center;
+a:hover {
+    text-decoration: underline;
 }
 
 .contatos {
-    display: flex
+    display: flex;
+    justify-content: center;
+    gap: 4em;
 }
 
-.contato-item3 {
-
+section > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: black;
+    text-decoration: none;
+    font-size: 1.375rem;  /*oque vale 22px*/
+    border: auto;
 }
 
-.map {
+h1 {
+    text-align: center;
+}
+
+#cabecalho {
+padding-right: 0rem;
+justify-content: space-between;
+}
+/*@media (min-width: 768px) @media (max-width: 480px) {*/   /*<--- Teste para adptar o letras para mobile*/
+nav.menu {
+    margin: auto 1.25rem;   /*oque vale 20px*/
+    text-align: right;
+    font-size: 1.25rem; /*oque vale 20px*/
+}
+
+header > a > img {
+    width: 12.5rem;   /*oque vale 200px*/
+    padding-left: 1.25rem;  /*oque vale 20px*/
+}
+
+header {
+    display: flex;
+    background-color: black;
+}
+
+nav > a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: auto 1.25rem;
+    text-align: right;
+}
+
+footer {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #000000;
+}
+
+footer > p {
+    color: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 2em;
     margin: auto;
-    width: 600px;
-    height: 450px;
+}
+
+hr {
+    color: red;
+    margin: 2px;
+    border-width: 1.5px;
+    border-style: solid;
 }
