@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: #E7E5C1;
+    background-color: var(--cor0);
     margin: auto;
     text-align: center;
     font-family: var(--font-padrão);
@@ -15,7 +15,10 @@ body{
     font-weight: normal;   
 }
 
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 :root {
     --cor0:#c5ebd6;
@@ -94,35 +97,48 @@ main {
 
 .lista {
     display: inline-flex;
-    gap: 30px;
+    gap: 60px;
+    margin: 30px;
 }
+
+body > main  > aside > p {
+    margin: 30px;
+}
+
 
 .saibamais {
     background-color: var(--cor1);
     border-radius: 20px;
-    padding: 20px;
+    padding: 0px;
 }
 
 .saibamais > p > a{
     color: var(--cor5);
 }
 
-.title {
-    display: flex;
+h3 {
     text-align: left;
     background-color: var(--cor5);
     color: white;
-    padding: 3px 3px 3px 3px;
+    padding: 5px;
     margin-top: 0px;  
 }
 
-.title > h1{
-    margin: 5px;
-}
 
 header {
     background: linear-gradient(to bottom, var(--cor1),var(--cor5) ); /*Adicionar degrade de cima para baixo #A043D1C #20844A */
 
     margin: auto;
 
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    margin: 0px;
+    padding: 30px;
+}
+
+footer > p > a {
+    color: var(--cor1);
 }
